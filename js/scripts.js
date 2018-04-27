@@ -1,8 +1,14 @@
 var withMenuItemsClass = document.getElementsByClassName('button');
 
-alert(withMenuItemsClass); // tu się wyswietla [object HTMLCollection]
-console.log(withMenuItemsClass.length); //tu się wyswietla 3
+var n = 0;
 
-// Stwórz pętlę for, która wykona się tyle razy, ile jest elementów na stronie - przyda ci się do tego właściwość length.
+for(i=0; i<withMenuItemsClass.length; i++) {
+    alert( withMenuItemsClass[n].innerHTML );
+    n=n+1;
+}
 
-// Nie wiem jak się zabrać za to polecenie. Nie wiem w jaki sposb pobrać treść z buttonow - nie bylo takiego polecenia.. 
+
+
+
+
+
